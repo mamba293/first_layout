@@ -165,14 +165,32 @@
   <main class="main_content">
    <div class="bloggers__scroll_container">
     <div class="blogger__layer">
-     <div class="name_field">
-      <img
-       src="./../../assets/images/mainContent/icons/girl.png"
-       alt="blogger"
-      />
-      <h1>Dollie Blair</h1>
-     </div>
+        <div class="name_field">
+        <img
+        src="./../../assets/images/mainContent/icons/girl.png"
+        alt="blogger"
+        />
+        <h1>Dollie Blair</h1>
+        </div>
 
+        <div class="arrow-container">
+        <button class="arrow-btn">
+        <span class="arrow left"></span>
+        </button>
+        <button class="arrow-btn">
+        <span class="arrow right"></span>
+        </button>
+        </div>
+    </div>
+    
+    <div class="scroll__container" id="blogger"></div>
+   </div>
+
+   <div class="bloggers__scroll_container">
+    <div class="blogger__layer">
+     <div class="name_field">
+      <h1 class="recomended_h1">Recommended</h1>
+     </div>
      <div class="arrow-container">
       <button class="arrow-btn">
        <span class="arrow left"></span>
@@ -182,7 +200,7 @@
       </button>
      </div>
     </div>
-    <div class="scroll__container" id="blogger"></div>
+    <div class="scroll__container-recomended" id="recomended"></div>
    </div>
 
    <div class="bloggers__scroll_container">
@@ -208,6 +226,7 @@
     <div class="scroll__container" id="channel"></div>
    </div>
   </main>
+
   <script src="./../../assets/scripts/slide.js" type="module"></script>
  </body>
 </html>

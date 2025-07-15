@@ -84,13 +84,46 @@ export const videosFromChannels = [
   }
 ]
 
-function createCard(video) {
+export const videosFromRecomended = [
+  {
+    image: "./../../assets/images/mainContent/recommended/person1.png",
+    timer: "3:40",
+    title: "Dude You Re Getting A Telescope",
+    views: "34k views  ·  5 months ago",
+    author: "Gussie French",
+  },
+  {
+    image: "./../../assets/images/mainContent/recommended/person2.png",
+    timer: "2:19",
+    title: "Moon Gazing",
+    views: "54k views  ·  11 months ago",
+    author: "Edward Osborne",
+  },
+  {
+    image: "./../../assets/images/mainContent/recommended/person3.png",
+    timer: "9:05",
+    title: "Moon Gazing",
+    views: "125k views  ·  4 months ago",
+    author: "Dollie Blair",
+  },
+]
 
+function createCard(video, variant = "default") {
   const card = document.createElement('div');
-  card.classList.add('scroll__card');
+
+  if (variant === "recomended") {
+    card.classList.add('scroll__card-recomended');
+  } else {
+    card.classList.add('scroll__card');
+  }
 
   const imageWrapper = document.createElement('div');
-  imageWrapper.classList.add('slide__image-wrapper');
+
+  if (variant === "recomended") {
+    imageWrapper.classList.add('slide__image__recomended-wrapper'); // ⬅ имя класса должно совпадать с CSS
+  } else {
+    imageWrapper.classList.add('slide__image-wrapper');
+  }
 
   const img = document.createElement('img');
   img.classList.add('slide__image');
@@ -127,9 +160,12 @@ function createCard(video) {
   return card;
 }
 
+
+
+
 function renderVideos(array, container) {
   array.forEach(video => {
-    const card = createCard(video);
+    const card = createCard(video, container.id);
     container.appendChild(card);
   });
 }
@@ -141,4 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const channelContainer = document.getElementById('channel');
   renderVideos(videosFromChannels, channelContainer);
+
+  const recomendedContainer = document.getElementById('recomended');
+  renderVideos(videosFromRecomended, recomendedContainer);
 });

@@ -48,8 +48,11 @@ body {
  padding: 12px 20px;
  border-radius: 22px;
  border: none;
- background-color: #ebebeb;
- font-size: 12px;
+ background-color: #EBEBEB;
+ font-size: 16px;
+ font-weight: 400;
+ color: #30354C;
+ font-family: "Mulish", sans-serif;
 }
 
 .search_navbar_container {
@@ -219,6 +222,10 @@ body {
 
 /* -------------- BLOGGER SCROLL ------------ */
 
+.bloggers__scroll_container {
+ padding-bottom: 50px;
+}
+
 .blogger__layer {
  display: flex;
  flex-direction: row;
@@ -248,6 +255,7 @@ body {
 .arrow-container {
  display: flex;
  gap: 10px;
+ align-items: center;
  /* align-items: flex-end; */
  height: 50px;
  /* padding-bottom: 5px; */
@@ -271,12 +279,12 @@ body {
 }
 
 .arrow {
-  display: inline-block;
-  width: 7px;        /* уже стрелка */
-  height: 7px;       /* ниже стрелка */
-  border: solid white;
-  border-width: 0 2px 2px 0;  /* стрелка станет тоньше */
-  padding: 0;        /* убираем лишнее */
+ display: inline-block;
+ width: 7px; 
+ height: 7px; 
+ border: solid white;
+ border-width: 0 2px 2px 0;
+ padding: 0; 
 }
 
 .left {
@@ -294,12 +302,29 @@ body {
  gap: 40px;
  overflow-x: auto;
  scroll-behavior: smooth;
- height: 220px;
+ height: 200px;
  width: scroll;
+ padding-right: 20px;
+}
+
+.scroll__container-recomended {
+ display: flex;
+ flex-direction: row;
+ white-space: nowrap;
+ gap: 40px;
+ overflow-x: auto;
+ scroll-behavior: smooth;
+ height: 300px;
+ width: scroll;
+ padding-right: 20px;
 }
 
 .scroll__container::-webkit-scrollbar {
- display: none; /* Chrome, Safari, Opera */
+ display: none;
+}
+
+.scroll__container-recomended::-webkit-scrollbar {
+ display: none;
 }
 
 .scroll__card {
@@ -310,7 +335,16 @@ body {
  flex-shrink: 0;
  position: relative;
  display: inline-block;
- /* margin-right: 40px; */
+}
+
+.scroll__card-recomended {
+ width: 540px;
+ height: 300px;
+ padding: 0 5px 0 5px;
+ cursor: pointer;
+ flex-shrink: 0;
+ position: relative;
+ display: inline-block;
 }
 
 .slide__image-wrapper {
@@ -322,11 +356,20 @@ body {
  margin-bottom: 10px;
 }
 
+.slide__image__recomended-wrapper {
+ position: relative;
+ width: 540px;
+ height: 250px;
+ border-radius: 14px;
+ overflow: hidden;
+ margin-bottom: 10px;
+}
+
 .slide__image {
  width: 100%;
  height: 100%;
  object-fit: cover;
- display: block;
+ display: inline-block;
 }
 
 .timer {
@@ -349,7 +392,7 @@ body {
 .video__info {
  display: flex;
  flex-direction: row;
- gap: 41px;
+ justify-content: space-between;
  color: #c2c2c2;
  font-weight: 400;
  font-size: 13px;
@@ -357,10 +400,15 @@ body {
 
 /* -------------- RECOMMENDED SCROLL ------------ */
 
+.recomended_h1 {
+ font-weight: 700;
+ font-size: 26px;
+}
+
 /* -------------- CHANNEL SCROLL ------------ */
 
-.recommended_paragrapgh{
-  color: #c2c2c2;
-  font-weight: 400;
-  font-size:16px;
+.recommended_paragrapgh {
+ color: #c2c2c2;
+ font-weight: 400;
+ font-size: 16px;
 }
