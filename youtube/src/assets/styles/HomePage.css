@@ -217,9 +217,16 @@ body {
  min-height: 100vh;
 }
 
-/* -------------- LITTLE SCROLL ------------ */
+/* -------------- BLOGGER SCROLL ------------ */
 
-.blogger_name_layer {
+.blogger__layer {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ padding-right: 149px;
+}
+
+.name_field {
  display: flex;
  flex-direction: row;
  gap: 20px;
@@ -227,15 +234,57 @@ body {
  margin-bottom: 30px;
 }
 
-.blogger_name_layer img {
+.name_field img {
  width: 50px;
  height: 50px;
  border-radius: 50%;
 }
 
-.blogger_name_layer h1 {
+.blogger__layer h1 {
  font-weight: 700;
  font-size: 26px;
+}
+
+.arrow-container {
+ display: flex;
+ gap: 10px;
+ /* align-items: flex-end; */
+ height: 50px;
+ /* padding-bottom: 5px; */
+}
+
+.arrow-btn {
+ width: 28px;
+ height: 28px;
+ background-color: #ccc; /* Серый цвет */
+ border: none;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ cursor: pointer;
+ transition: background-color 0.3s;
+}
+
+.arrow-btn:hover {
+ background-color: #bbb;
+}
+
+.arrow {
+  display: inline-block;
+  width: 7px;        /* уже стрелка */
+  height: 7px;       /* ниже стрелка */
+  border: solid white;
+  border-width: 0 2px 2px 0;  /* стрелка станет тоньше */
+  padding: 0;        /* убираем лишнее */
+}
+
+.left {
+ transform: rotate(135deg);
+}
+
+.right {
+ transform: rotate(-45deg);
 }
 
 .scroll__container {
@@ -247,10 +296,10 @@ body {
  scroll-behavior: smooth;
  height: 220px;
  width: scroll;
-} 
+}
 
 .scroll__container::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+ display: none; /* Chrome, Safari, Opera */
 }
 
 .scroll__card {
@@ -306,4 +355,12 @@ body {
  font-size: 13px;
 }
 
-/* -------------- BIG SCROLL ------------ */
+/* -------------- RECOMMENDED SCROLL ------------ */
+
+/* -------------- CHANNEL SCROLL ------------ */
+
+.recommended_paragrapgh{
+  color: #c2c2c2;
+  font-weight: 400;
+  font-size:16px;
+}

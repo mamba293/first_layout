@@ -41,6 +41,48 @@ export const videosFromBloggers = [
   }
 ]
 
+export const videosFromChannels = [
+  {
+    image: "./../../assets/images/mainContent/food/food1.png",
+    timer: "7:36",
+    title: "Astronomy Or Astrology",
+    views: "240k views  ·  4 months ago",
+    author: "Food & Drink",
+  },
+  {
+    image: "./../../assets/images/mainContent/food/food2.png",
+    timer: "2:19",
+    title: "Advertising Outdoors",
+    views: "13k views  ·  15 days ago",
+    author: "Food & Drink",
+  },
+  {
+    image: "./../../assets/images/mainContent/food/food3.png",
+    timer: "9:05",
+    title: "Radio Astronomy",
+    views: "1k views  ·  11 months ago",
+    author: "Food & Drink",
+  },
+  {
+    image: "./../../assets/images/mainContent/food/food4.png",
+    timer: "3:40",
+    title: "A Good Autoresponder",
+    views: "45k views  ·  2 months ago",
+    author: "Food & Drink",
+  }, {
+    image: "./../../assets/images/mainContent/food/food5.png",
+    timer: "1:56",
+    title: "Baby Monitor Technology",
+    views: "86k views  ·  7 days ago",
+    author: "Food & Drink",
+  }, {
+    image: "./../../assets/images/mainContent/food/food6.png",
+    timer: "4:15",
+    title: "Asteroids",
+    views: "123kg views  ·  4 months ago",
+    author: "Food & Drink",
+  }
+]
 
 function createCard(video) {
 
@@ -85,12 +127,18 @@ function createCard(video) {
   return card;
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const container = document.querySelector('.scroll__container');
-  
-  videosFromBloggers.forEach(video => {
+function renderVideos(array, container) {
+  array.forEach(video => {
     const card = createCard(video);
     container.appendChild(card);
   });
-});
+}
 
+document.addEventListener('DOMContentLoaded', () => {
+  const bloggerContainer = document.getElementById('blogger');
+
+  renderVideos(videosFromBloggers, bloggerContainer);
+
+  const channelContainer = document.getElementById('channel');
+  renderVideos(videosFromChannels, channelContainer);
+});
