@@ -264,7 +264,7 @@ body {
 .arrow-btn {
  width: 28px;
  height: 28px;
- background-color: #ccc; /* Серый цвет */
+ background-color: #ccc; 
  border: none;
  border-radius: 50%;
  display: flex;
@@ -330,7 +330,6 @@ body {
 .scroll__card {
  width: 250px;
  height: 200px;
- padding: 0 5px 0 5px;
  cursor: pointer;
  flex-shrink: 0;
  position: relative;
@@ -340,7 +339,6 @@ body {
 .scroll__card-recomended {
  width: 540px;
  height: 300px;
- padding: 0 5px 0 5px;
  cursor: pointer;
  flex-shrink: 0;
  position: relative;
