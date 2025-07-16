@@ -120,7 +120,7 @@ function createCard(video, variant = "default") {
   const imageWrapper = document.createElement('div');
 
   if (variant === "recomended") {
-    imageWrapper.classList.add('slide__image__recomended-wrapper'); // ⬅ имя класса должно совпадать с CSS
+    imageWrapper.classList.add('slide__image__recomended-wrapper');
   } else {
     imageWrapper.classList.add('slide__image-wrapper');
   }
@@ -159,9 +159,6 @@ function createCard(video, variant = "default") {
 
   return card;
 }
-
-
-
 
 function renderVideos(array, container) {
   array.forEach(video => {
