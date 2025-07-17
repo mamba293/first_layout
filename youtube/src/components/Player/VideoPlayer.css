@@ -1,6 +1,147 @@
-.video__player-container{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.video__player-container {
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+ font-family: "Mulish", sans-serif;
+ background-color: #fff;
 }
 
+.player-container {
+ position: relative;
+ max-width: 1363px;
+ border-radius: 14px;
+ overflow: hidden;
+ background-color: black;
+}
+
+.video {
+ width: 100%;
+ height: auto;
+ display: block;
+}
+
+.progress-wrapper {
+ position: absolute;
+ bottom: 78px;
+ left: 33px;
+ right: 33px;
+ display: flex;
+ flex-direction: column;
+ gap: 6px;
+ z-index: 5;
+}
+
+.progress-times {
+ display: flex;
+ justify-content: space-between;
+ font-size: 12px;
+ color: #fff;
+ padding: 0 4px;
+}
+
+.progress-times p {
+    font-weight: 400;
+    font-size:22px;
+}
+
+.progress-overlay {
+ height: 10px;
+ width: 100%;
+ background-color: rgba(255, 255, 255, 0.2);
+ border-radius: 5px;
+ overflow: hidden;
+}
+
+.progress-bar {
+ width: 35%; /* заменишь на динамическое значение */
+ height: 100%;
+ background-color: red;
+ transition: width 0.3s ease;
+}
+
+.controls {
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ padding: 21px 43px 33px 43px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ color: white;
+ z-index: 2;
+ gap: 12px;
+ border-radius: 0 0 12px 12px;
+}
+
+.controls_pannel-left {
+ display: flex;
+ flex-direction: row;
+ gap: 40px;
+}
+
+.controls_pannel-right {
+ display: flex;
+ flex-direction: row;
+ gap: 25px;
+}
+
+.controls img {
+ width: 24px;
+ height: 24px;
+ cursor: pointer;
+ transition: transform 0.2s;
+}
+
+.controls-time {
+ font-size: 14px;
+ min-width: 100px;
+ text-align: center;
+}
+
+.volume_container {
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
+ gap: 20px;
+}
+
+.volume_bar {
+ width: 86px;
+ height: 8px;
+ background: transparent;
+ -webkit-appearance: none;
+ appearance: none;
+ cursor: pointer;
+ padding: 0;
+ margin: 0;
+}
+
+.volume_bar {
+ width: 86px;
+ height: 8px;
+ background: transparent;
+ -webkit-appearance: none;
+ appearance: none;
+ cursor: pointer;
+
+ /* Начальный градиент — 50% громкости */
+ background: linear-gradient(to right, #fff 50%, #ccc 50%);
+ border-radius: 4px;
+ overflow: hidden;
+}
+
+/* Скрытый ползунок */
+.volume_bar::-webkit-slider-thumb {
+ -webkit-appearance: none;
+ appearance: none;
+ width: 0;
+ height: 0;
+ background: transparent;
+ border: none;
+}
+
+.volume_bar::-webkit-slider-runnable-track {
+ height: 8px;
+ background: transparent;
+}
