@@ -1,0 +1,79 @@
+.channel_container {
+ max-width: 1363px;
+ height: 195px;
+ display: flex;
+ flex-direction: row;
+}
+
+.channel_icon-container {
+ width: 80px;
+ height: auto;
+ align-self: flex-start;
+}
+
+.channel_icon {
+ width: 80px;
+ height: 80px;
+ object-fit: cover;
+ border-radius: 50%;
+}
+
+.channel_description-container {
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: flex-start;
+ font-family: "Mulish", sans-serif;
+ background-color: #fff;
+ height: 100%;
+ padding-left: 12px ;
+
+ 
+}
+.name {
+ margin: 0 0 4px 0;
+ font-size: 26px;
+ font-weight: 700;
+}
+
+.date {
+ align-self: flex-start;
+ justify-content: flex-start;
+ font-size: 13px;
+ font-weight: 400;
+ color: #c2c2c2;
+ margin-bottom: 14px;
+}
+
+.description {
+ margin-bottom: 15px;
+ font-size: 16px;
+ font-weight: 400;
+ color: #666666;
+}
+
+.show_button {
+ background: none;
+ border: none;
+ font-size: 20px;
+ font-weight: 400;
+ color: #c2c2c2;
+}
+
+.subscribe_container{
+    width:100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.subscribe-btn {
+ background-color: red;
+ border-radius: 20px;
+ color: #fff;
+ font-size: 16px;
+ font-weight: 400;
+ border: none;
+ cursor: pointer;
+ padding: 10px 20px;
+}

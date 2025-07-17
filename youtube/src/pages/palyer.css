@@ -1,0 +1,16 @@
+.main_content {
+  display: flex; /* исправили опечатку */
+  flex-direction: row;
+  gap: 40px;
+  padding-left: 80px;
+  padding-right: 40px; /* можно добавить отступ справа */
+  align-items: flex-start;
+
+}
+
+.content_area {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

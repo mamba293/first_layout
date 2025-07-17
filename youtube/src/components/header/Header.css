@@ -1,11 +1,12 @@
-header_navbar_container {
+.header_navbar_container {
  position: sticky;
  top: 0;
  left: 0;
  right: 0;
  z-index: 100;
- padding: 20px 50px 50px 32px;
+ padding: 20px 70px 30px 32px;
  background-color: #fff;
+
 }
 
 .navbar {

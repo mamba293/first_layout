@@ -4,6 +4,9 @@
  gap: 20px;
  font-family: "Mulish", sans-serif;
  background-color: #fff;
+ border-bottom: 1px solid rgba(216, 216, 216, 0.5);
+ margin-bottom: 38px;
+ max-width: 1363px;
 }
 
 .player-container {
@@ -40,8 +43,8 @@
 }
 
 .progress-times p {
-    font-weight: 400;
-    font-size:22px;
+ font-weight: 400;
+ font-size: 22px;
 }
 
 .progress-overlay {
@@ -124,7 +127,6 @@
  -webkit-appearance: none;
  appearance: none;
  cursor: pointer;
-
  /* Начальный градиент — 50% громкости */
  background: linear-gradient(to right, #fff 50%, #ccc 50%);
  border-radius: 4px;
@@ -144,4 +146,52 @@
 .volume_bar::-webkit-slider-runnable-track {
  height: 8px;
  background: transparent;
+}
+
+.decription-func-container {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ max-width: 1363px;
+}
+
+.decription-func-container {
+ font-weight: 400;
+ font-size: 20px;
+}
+
+.func-container {
+ display: flex;
+ flex-direction: row;
+}
+
+.func-container p {
+ font-weight: 400;
+ font-size: 16px;
+ font-family: "Mulish", sans-serif;
+}
+
+.func-container button {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+ gap: 4px;
+ width: 100px;
+ height: 40px;
+ border: none;
+ background-color: rgba(235, 235, 235, 0.3);
+ border-radius: 20px;
+ cursor: pointer;
+}
+
+.func-container button img {
+ width: 14px;
+ height: 13px;
+}
+
+.more-button img {
+ width: 28px;
+ height: 6px;
 }
