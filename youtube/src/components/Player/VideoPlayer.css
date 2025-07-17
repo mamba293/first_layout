@@ -4,9 +4,10 @@
  gap: 20px;
  font-family: "Mulish", sans-serif;
  background-color: #fff;
+ padding-bottom: 15px;
  border-bottom: 1px solid rgba(216, 216, 216, 0.5);
- margin-bottom: 38px;
  max-width: 1363px;
+ margin-bottom: 38px;
 }
 
 .player-container {
@@ -164,6 +165,7 @@
 .func-container {
  display: flex;
  flex-direction: row;
+ gap: 10px;
 }
 
 .func-container p {
@@ -172,7 +174,7 @@
  font-family: "Mulish", sans-serif;
 }
 
-.func-container button {
+.func-container-button {
  display: flex;
  flex-direction: row;
  align-items: center;
@@ -194,4 +196,11 @@
 .more-button img {
  width: 28px;
  height: 6px;
+}
+
+.dots_button{
+    background: none;
+    border: none;
+    margin-left: 30px;
+    cursor: pointer;
 }

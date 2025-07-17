@@ -1,11 +1,9 @@
 .main_content {
-  display: flex; /* исправили опечатку */
+  display: flex;
   flex-direction: row;
   gap: 40px;
-  padding-left: 80px;
-  padding-right: 40px; /* можно добавить отступ справа */
+  padding-left: 80px; 
   align-items: flex-start;
-
 }
 
 .content_area {

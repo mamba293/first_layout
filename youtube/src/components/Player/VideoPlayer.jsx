@@ -71,22 +71,22 @@ export default function VideoPlayer() {
     <div className="decription-func-container">
      <p className="description-views">123k views</p>
      <div className="func-container">
-      <button>
+      <button className="func-container-button">
        <img src="/src/assets/images/functional-icons/like.svg" alt="like" />
        <p>123k</p>
       </button>
-      <button>
+      <button className="func-container-button">
        <img
         src="/src/assets/images/functional-icons/dislike.svg"
         alt="dislike"
        />
        <p>435k</p>
       </button>
-      <button>
+      <button className="func-container-button">
        <img src="/src/assets/images/functional-icons/share.svg" alt="share" />
        <p>Share</p>
       </button>
-      <button>
+      <button className="dots_button">
        <img
         src="/src/assets/images/functional-icons/more.svg"
         alt="more"

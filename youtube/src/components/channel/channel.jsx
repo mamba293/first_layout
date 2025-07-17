@@ -2,8 +2,8 @@ import "./channel.css";
 
 export default function Channel() {
  return (
-  <div class="channel_container">
-   <div class="channel_icon-container">
+  <div className="channel_container">
+   <div className="channel_icon-container">
     <img
      src="/src/assets/images/mainContent/icons/food.png"
      alt="channel_icon"
