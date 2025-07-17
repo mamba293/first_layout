@@ -108,6 +108,50 @@ export const videosFromRecomended = [
   },
 ]
 
+export const channelsVideo = [
+   {
+    image: "./../../assets/images/mainContent/recommended/person1.png",
+    timer: "3:40",
+    title: "Dude You Re Getting A Telescope",
+    views: "34k views  ·  5 months ago",
+    author: "Gussie French",
+  },
+  {
+    image: "./../../assets/images/mainContent/recommended/person2.png",
+    timer: "2:19",
+    title: "Moon Gazing",
+    views: "54k views  ·  11 months ago",
+    author: "Edward Osborne",
+  },
+  {
+    image: "./../../assets/images/mainContent/recommended/person3.png",
+    timer: "9:05",
+    title: "Moon Gazing",
+    views: "125k views  ·  4 months ago",
+    author: "Dollie Blair",
+  }, {
+    image: "./../../assets/images/mainContent/recommended/person1.png",
+    timer: "3:40",
+    title: "Dude You Re Getting A Telescope",
+    views: "34k views  ·  5 months ago",
+    author: "Gussie French",
+  },
+  {
+    image: "./../../assets/images/mainContent/recommended/person2.png",
+    timer: "2:19",
+    title: "Moon Gazing",
+    views: "54k views  ·  11 months ago",
+    author: "Edward Osborne",
+  },
+  {
+    image: "./../../assets/images/mainContent/recommended/person3.png",
+    timer: "9:05",
+    title: "Moon Gazing",
+    views: "125k views  ·  4 months ago",
+    author: "Dollie Blair",
+  },
+]
+
 function createCard(video, variant = "default") {
   const card = document.createElement('div');
 
