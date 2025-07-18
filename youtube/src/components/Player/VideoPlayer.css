@@ -39,6 +39,7 @@
  z-index: 5;
 }
 
+
 .progress-times {
  display: flex;
  justify-content: space-between;
@@ -82,6 +83,7 @@
  border-radius: 0 0 12px 12px;
 }
 
+
 .controls_pannel-left {
  display: flex;
  flex-direction: row;
@@ -105,6 +107,17 @@
  font-size: 14px;
  min-width: 100px;
  text-align: center;
+}
+
+.controls-play{
+    display: flex;
+    align-items: center;
+}
+
+.controls-next{
+    display: flex;
+    align-items: center;
+    padding-top: 2px;
 }
 
 .volume_container {

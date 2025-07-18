@@ -4,6 +4,7 @@
  gap: 40px;
  padding-left: 80px;
  align-items: flex-start;
+ font-family: "Mulish", sans-serif;
 }
 
 .content_area {
@@ -22,6 +23,6 @@
   gap: 0;
  }
  .content_area {
-    gap: 0;
+  gap: 0;
  }
 }
