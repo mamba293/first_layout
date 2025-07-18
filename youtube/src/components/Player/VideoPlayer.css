@@ -39,7 +39,6 @@
  z-index: 5;
 }
 
-
 .progress-times {
  display: flex;
  justify-content: space-between;
@@ -83,7 +82,6 @@
  border-radius: 0 0 12px 12px;
 }
 
-
 .controls_pannel-left {
  display: flex;
  flex-direction: row;
@@ -109,15 +107,15 @@
  text-align: center;
 }
 
-.controls-play{
-    display: flex;
-    align-items: center;
+.controls-play {
+ display: flex;
+ align-items: center;
 }
 
-.controls-next{
-    display: flex;
-    align-items: center;
-    padding-top: 2px;
+.controls-next {
+ display: flex;
+ align-items: center;
+ padding-top: 2px;
 }
 
 .volume_container {
@@ -223,6 +221,10 @@
 }
 
 .video__player-description-mobile {
+ display: none;
+}
+
+.mobile-navbar {
  display: none;
 }
 
@@ -380,5 +382,46 @@
   background-color: red;
   width: 0%; /* Меняешь через JS */
   border-radius: 2px;
+ }
+
+ .mobile-navbar__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+ }
+
+ .mobile-navbar__item {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .mobile-navbar__item img {
+  margin-bottom: 4px;
+ }
+
+ .mobile-navbar__item p {
+  font-size: 10px;
+  font-weight: 400;
+  color: #898989;
+ }
+ .mobile-navbar {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  z-index: 99;
+  padding: 10px 0;
+ }
+ .mobile-navbar {
+  display: block;
  }
 }
