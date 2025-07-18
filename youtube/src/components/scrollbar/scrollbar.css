@@ -149,6 +149,18 @@
  font-weight: 400;
  font-size: 18px;
 }
+@media (max-width: 1919px) {
+ .scroll-container {
+  width: calc(367px * 0.9);
+  margin-right: calc(70px * 0.9);
+ }
+
+ .scroll-item,
+ .item-image-container,
+ .item-image {
+  width: calc(367px * 0.7);
+ }
+}
 
 @media (max-width: 320px) {
  .scroll-container {
@@ -233,18 +245,5 @@
  }
  .item-meta {
   font-size: 13px;
- }
-}
-
-@media (max-width: 1919px) {
- .scroll-container {
-  width: calc(367px * 0.9);
-  margin-right: calc(70px * 0.9);
- }
-
- .scroll-item,
- .item-image-container,
- .item-image {
-  width: calc(367px * 0.7);
  }
 }

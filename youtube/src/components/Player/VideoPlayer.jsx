@@ -10,6 +10,17 @@ export default function VideoPlayer() {
      width="1363"
      height="700"
     ></video>
+    <div className="controls_mobile">
+     <img src="/src/assets/videos/controls/Pause.svg" alt="pause" />
+     <span>1:34</span>
+
+     <div className="progress_line">
+      <div className="progress_fill" style={{ width: "20%" }}></div>
+     </div>
+
+     <span>-10:00</span>
+     <img src="/src/assets/videos/controls/Volume.svg" alt="volume" />
+    </div>
 
     <div className="progress-wrapper">
      <div className="progress-times">
@@ -94,6 +105,40 @@ export default function VideoPlayer() {
        />
       </button>
      </div>
+    </div>
+   </div>
+
+   <div className="video__player-description-mobile">
+    <div className="header_description-mobile">
+     <div className="left_container-mobile">
+      <h1 className="description-name-mobile">
+       Dude You Re Getting A Telescope
+      </h1>
+      <p className="description-views-mobile">123k views</p>
+     </div>
+     <div className="chewron_container">
+      <button>
+       <img
+        src="/src/assets/images/sidebar/RightArrowBlack.svg"
+        alt="arrow-down"
+        class="arrow_img"
+       />
+      </button>
+     </div>
+    </div>
+    <div className="scroll_functional_container">
+     <button className="func-container-button-mobile">
+      <img src="src/assets/images/functional-icons/like.svg" alt="like" />
+      <p>123k</p>
+     </button>
+     <button className="func-container-button-mobile">
+      <img src="src/assets/images/functional-icons/dislike.svg" alt="dislike" />
+      <p>435k</p>
+     </button>
+     <button className="func-container-button-mobile">
+      <img src="src/assets/images/functional-icons/share.svg" alt="share" />
+      <p>Share</p>
+     </button>
     </div>
    </div>
   </div>

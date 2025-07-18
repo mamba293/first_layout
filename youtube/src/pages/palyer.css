@@ -21,4 +21,7 @@
   margin: 0 16px;
   gap: 0;
  }
+ .content_area {
+    gap: 0;
+ }
 }
