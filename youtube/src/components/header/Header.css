@@ -98,3 +98,52 @@
  width: 116px;
  height: 25px;
 }
+
+.mobile_more {
+ display: none;
+}
+
+@media (max-width: 320px) {
+ .header_navbar_container {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 12px 20px 0 16px;
+  background-color: #fff;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 23px;
+ }
+
+ .navbar__menu-button {
+  display: none;
+  gap: 0;
+ }
+
+ .right_navbar,
+ .search_navbar_container,
+ .navbar__icons-list {
+  display: none;
+ }
+
+ .mobile_more {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+ }
+
+ .mobile_more button {
+    cursor: pointer;
+    background: none;
+    border: none;
+ }
+ .navbar {
+  display: flex;
+  flex-direction: row;
+  gap: 99px;
+ }
+}

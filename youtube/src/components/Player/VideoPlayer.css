@@ -204,3 +204,10 @@
     margin-left: 30px;
     cursor: pointer;
 }
+
+@media (max-width: 320px) {
+  .video__player-container{
+    max-width: 320px;
+    margin: 0 -16px;
+  }
+}

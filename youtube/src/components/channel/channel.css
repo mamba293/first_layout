@@ -26,9 +26,7 @@
  font-family: "Mulish", sans-serif;
  background-color: #fff;
  height: 100%;
- padding-left: 12px ;
-
- 
+ padding-left: 12px;
 }
 .name {
  margin: 0 0 4px 0;
@@ -61,11 +59,11 @@
  cursor: pointer;
 }
 
-.subscribe_container{
-    width:100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
+.subscribe_container {
+ width: 100%;
+ display: flex;
+ align-items: flex-start;
+ justify-content: flex-end;
 }
 
 .subscribe-btn {
@@ -77,4 +75,76 @@
  border: none;
  cursor: pointer;
  padding: 10px 20px;
+}
+
+.count_subs {
+ display: none;
+}
+
+@media (max-width: 320px) {
+ .count,
+ .date,
+ .show_button,
+ .description {
+  display: none;
+ }
+
+ .channel_container {
+  width: 288px;
+  height: 80px;
+  border-bottom: 1px solid #D8D8D880;
+  border-top: 1px solid #D8D8D880;
+  margin-bottom: 20px;
+  padding: 0;
+ }
+
+ .channel_icon-container {
+  box-sizing:border-box  ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 80px;
+  
+ }
+
+ .subscribe_container {
+  width: 40%;
+  display: flex;
+  align-items: center;
+ }
+
+ .subscribe-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+ }
+
+ .name {
+  font-size: 16px;
+  font-weight: 700;
+ }
+
+ .count_subs {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+ }
+
+ .channel_icon {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+ }
+
+ .channel_description-container {
+  justify-content: center;
+ }
 }

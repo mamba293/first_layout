@@ -13,7 +13,7 @@ export default function Channel() {
    <div className="channel_description-container">
     <h2 className="name">Food & Drink</h2>
     <p className="date">Published on 14 Jun 2019</p>
-
+    <p class="count_subs">245K subscribed</p>
     <p className="description">
      A successful marketing plan relies heavily on the pulling-power of
      advertising copy. Writing result-oriented ad copy is difficult, as it must
@@ -26,7 +26,7 @@ export default function Channel() {
    </div>
    <div className="subscribe_container">
     <button className="subscribe-btn">
-        Subscribe 2.3m
+        Subscribe <span class="count">2.3m</span>
     </button>
    </div>
   </div>

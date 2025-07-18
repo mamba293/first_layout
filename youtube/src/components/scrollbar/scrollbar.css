@@ -27,7 +27,6 @@
 }
 
 .autoplay {
- font-size: 12px;
  color: #606060;
  background: #eee;
  padding: 4px 8px;
@@ -101,7 +100,7 @@
  margin-bottom: 16px;
  cursor: pointer;
  width: 367px;
- margin-bottom: 30px;;
+ margin-bottom: 30px;
 }
 
 .item-image-container {
@@ -133,39 +132,119 @@
  font-weight: 400;
 }
 
+.item-details {
+ display: flex;
+ flex-direction: column;
+ gap: 9px;
+ color: #19202c;
+ font-weight: 700;
+ font-size: 26px;
+}
+
+.item-meta {
+ display: flex;
+ justify-content: space-between;
+ margin-right: 4px;
+ color: #c2c2c2;
+ font-weight: 400;
+ font-size: 18px;
+}
+
+@media (max-width: 320px) {
+ .scroll-container {
+  width: 100%;
+  height: auto;
+ }
+
+ .autoplay-toggle {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 19px;
+ }
+
+ .toggle-slider.round {
+  border-radius: 8px;
+ }
+
+ .autoplay-toggle input:checked + .toggle-slider:before {
+  transform: translateX(10px);
+ }
+
+ .toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #2196f3;
+  transition: 0.4s;
+ }
+
+ .item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  color: #19202c;
+  font-weight: 700;
+  font-size: 26px;
+ }
+
+ .item-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 4px;
+  color: #c2c2c2;
+  font-weight: 400;
+  font-size: 18px;
+ }
+
+ .scroll-header h3 {
+  font-size: 20px;
+ }
+
+ .autoplay-text {
+  font-size: 10px;
+ }
+
+ .scroll-item {
+  width: 100%;
+ }
+
+ .item-image-container {
+  width: 100%;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 14px;
+  margin-bottom: 12px;
+ }
+
+ .item-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+ }
+
+ .item-title {
+  font-size: 16px;
+ }
+ .item-meta {
+  font-size: 13px;
+ }
+}
+
 @media (max-width: 1919px) {
  .scroll-container {
   width: calc(367px * 0.9);
   margin-right: calc(70px * 0.9);
-
-  .scroll-item,
-  .item-image-container,
-  .item-image {
-   width: calc(367px * 0.70);
-  }
  }
-}
 
-.item-details{
-    display: flex;
-    flex-direction: column;
-    gap:9px;
-}
-
-.item-meta{
-    display: flex;
-    justify-content: space-between;
-    margin-right: 4px;
-}
-
-.item-title{
-    color: #19202C;
-    font-weight: 700;
-    font-size: 26px;
-}
-
-.item-meta{
-    color: #C2C2C2;
-    font-weight: 400;
-    font-size: 18px;
+ .scroll-item,
+ .item-image-container,
+ .item-image {
+  width: calc(367px * 0.7);
+ }
 }
