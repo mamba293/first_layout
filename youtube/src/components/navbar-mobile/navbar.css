@@ -1,6 +1,6 @@
 .mobile-navbar {
- display: none;
-}
+  display: none;
+ }
 
 .mobile-navbar__list {
  display: flex;
