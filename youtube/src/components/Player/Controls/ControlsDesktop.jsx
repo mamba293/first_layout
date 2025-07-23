@@ -6,20 +6,20 @@ export default function ControlsDesktop() {
    <div className="controls_pannel-left">
     <div className="controls-play">
      <img
-      src="/videos/controls/Pause.svg"
+      src="/first_layout/videos/controls/Pause.svg"
       alt="pause"
       className="pause_btn"
      />
     </div>
     <div className="controls-next">
      <img
-      src="/videos/controls/Next.svg"
+      src="/first_layout/videos/controls/Next.svg"
       alt="next"
       className="play_next"
      />
     </div>
     <div className="volume_container">
-     <img src="/videos/controls/Volume.svg" alt="" />
+     <img src="/first_layout/videos/controls/Volume.svg" alt="" />
      <input
       type="range"
       className="volume_bar"
@@ -31,16 +31,16 @@ export default function ControlsDesktop() {
    </div>
    <div className="controls_pannel-right">
     <div>
-     <img src="/videos/controls/Subtitles.svg" alt="" />
+     <img src="/first_layout/videos/controls/Subtitles.svg" alt="" />
     </div>
     <div>
-     <img src="/videos/controls/Settings.svg" alt="" />
+     <img src="/first_layout/videos/controls/Settings.svg" alt="" />
     </div>
     <div>
-     <img src="/videos/controls/Size.svg" alt="" />
+     <img src="/first_layout/videos/controls/Size.svg" alt="" />
     </div>
     <div>
-     <img src="/videos/controls/FullScreen.svg" alt="" />
+     <img src="/first_layout/videos/controls/FullScreen.svg" alt="" />
     </div>
    </div>
   </div>

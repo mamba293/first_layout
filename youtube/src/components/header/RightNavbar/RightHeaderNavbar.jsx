@@ -6,7 +6,7 @@ export default function RightHeaderNavbar() {
    <div className="search_navbar_container">
     <input type="search" className="navbar__search" placeholder="Search" />
     <img
-     src="/images/headbar/search.svg"
+     src="/first_layout/images/headbar/search.svg"
      alt="Search"
      className="search_icon"
     />
@@ -15,35 +15,35 @@ export default function RightHeaderNavbar() {
    <ul class="navbar__icons-list">
     <li class="navbar__icon-item">
      <img
-      src="/images/headbar/phone.svg"
+      src="/first_layout/images/headbar/phone.svg"
       alt="Phone"
       class="navbar__icon"
      />
     </li>
     <li class="navbar__icon-item">
      <img
-      src="/images/headbar/Combined Shape.svg"
+      src="/first_layout/images/headbar/Combined Shape.svg"
       alt="Notifications"
       class="navbar__icon"
      />
     </li>
     <li class="navbar__icon-item">
      <img
-      src="/images/headbar/ring.svg"
+      src="/first_layout/images/headbar/ring.svg"
       alt="Ring"
       class="navbar__icon"
      />
     </li>
     <li class="navbar__icon-item-search">
      <img
-      src="/images/headbar/search.svg"
+      src="/first_layout/images/headbar/search.svg"
       alt="Search"
       class="search_icon-mobile"
      />
     </li>
     <li class="navbar__icon-item">
      <img
-      src="/images/myImage.png"
+      src="/first_layout/images/myImage.png"
       alt="User Avatar"
       class="navbar__avatar"
      />

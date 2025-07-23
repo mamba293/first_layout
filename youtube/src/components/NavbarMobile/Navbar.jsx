@@ -1,7 +1,7 @@
-import homeIcon from "/images/sidebar/Combined-Shape.svg";
-import trendingIcon from "/images/sidebar/ui-01.svg";
-import subsIcon from "/images/sidebar/ui-45.svg";
-import libraryIcon from "/images/sidebar/documents-11.svg";
+import homeIcon from "/first_layout/images/sidebar/Combined-Shape.svg";
+import trendingIcon from "/first_layout/images/sidebar/ui-01.svg";
+import subsIcon from "/first_layout/images/sidebar/ui-45.svg";
+import libraryIcon from "/first_layout/images/sidebar/documents-11.svg";
 import "./Navbar.css"
 
 const MobileNavbar = () => {

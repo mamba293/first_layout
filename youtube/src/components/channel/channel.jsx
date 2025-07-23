@@ -5,7 +5,7 @@ export default function Channel() {
   <div className="channel_container">
    <div className="channel_icon-container">
     <img
-     src="/images/mainContent/icons/food.png"
+     src="/first_layout/images/mainContent/icons/food.png"
      alt="channel_icon"
      className="channel_icon"
     />

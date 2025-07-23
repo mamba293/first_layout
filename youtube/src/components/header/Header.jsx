@@ -12,8 +12,8 @@ const Header = () => {
     <RightHeaderNavbar/>
     
     <div class="mobile_more">
-     <button><img src="/src/assets/images/headbar/search.svg" alt="Search"/></button>
-     <button><img src="/src/assets/images/headbar/headerDots.svg" alt="mobileDots" /></button>
+     <button><img src="/first_layout/images/headbar/search.svg" alt="Search"/></button>
+     <button><img src="/first_layout/images/headbar/headerDots.svg" alt="mobileDots" /></button>
     </div>
    </nav>
   </header>
