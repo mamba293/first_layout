@@ -1,11 +1,11 @@
-import Header from "/src/components/Header/Heder.jsx";
+import Header from "/src/components/Header/Header.jsx";
 import VideoPlayer from "/src/components/Player/VideoPlayer";
 import Channel from "/src/components/Channel/Channel.jsx";
 import "./Player.css";
 import Scrollbar from "/src/components/Scrollbar/Scrollbar.jsx";
 import MobileNavbar from "/src/components/NavbarMobile/Navbar.jsx";
 
-export default function VideoPlayerPage() {
+export default function App() {
  return (
   <>
   <Header />

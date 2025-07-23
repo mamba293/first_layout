@@ -3,9 +3,10 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  base: '/first_layout/youtube/',
   assetsInclude: ['**/*.svg', '**/*.png', '**/*.jpg', '**/*.jpeg'],
   build: {
-    outDir: 'dist', // Vercel будет использовать её
+    outDir: 'dist',
     rollupOptions: {
       output: {
         assetFileNames: (assetInfo) => {
