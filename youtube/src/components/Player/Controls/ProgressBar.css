@@ -1,0 +1,38 @@
+.progress-wrapper {
+ position: absolute;
+ bottom: 78px;
+ left: 33px;
+ right: 33px;
+ display: flex;
+ flex-direction: column;
+ gap: 6px;
+ z-index: 5;
+}
+
+.progress-times {
+ display: flex;
+ justify-content: space-between;
+ font-size: 12px;
+ color: #fff;
+ padding: 0 4px;
+}
+
+.progress-times p {
+ font-weight: 400;
+ font-size: 22px;
+}
+
+.progress-overlay {
+ height: 10px;
+ width: 100%;
+ background-color: rgba(255, 255, 255, 0.2);
+ border-radius: 5px;
+ overflow: hidden;
+}
+
+.progress-bar {
+ width: 35%;
+ height: 100%;
+ background-color: red;
+ transition: width 0.3s ease;
+}

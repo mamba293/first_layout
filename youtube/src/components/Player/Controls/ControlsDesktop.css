@@ -1,0 +1,80 @@
+.controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 21px 43px 33px 43px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  z-index: 2;
+  gap: 12px;
+  border-radius: 0 0 12px 12px;
+}
+
+.controls_pannel-left {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.controls_pannel-right {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.controls img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.controls-play {
+  display: flex;
+  align-items: center;
+}
+
+.controls-next {
+  display: flex;
+  align-items: center;
+  padding-top: 2px;
+}
+
+.volume_container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.volume_bar {
+  width: 86px;
+  height: 8px;
+  background: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, #fff 50%, #ccc 50%);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* Скрытый ползунок */
+.volume_bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: none;
+}
+
+.volume_bar::-webkit-slider-runnable-track {
+  height: 8px;
+  background: transparent;
+}
