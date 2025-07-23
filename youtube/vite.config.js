@@ -3,7 +3,6 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/first_layout/youtube/',
   assetsInclude: ['**/*.svg', '**/*.png', '**/*.jpg', '**/*.jpeg'],
   build: {
     outDir: 'dist',
@@ -18,4 +17,5 @@ export default defineConfig({
       },
     },
   },
+  base: "/first_layout/"
 })
