@@ -1,70 +1,108 @@
-@media (max-width: 480px) {
-  .video__player-description {
-    display: none;
-  }
-
-  .description-name {
-    font-size: 20px;
-  }
-
-  .description-views {
-    font-size: 12px;
-  }
-
-  .func-container {
-    display: none;
-  }
-}
-
-.description-func-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1363px;
-  font-weight: 400;
-  font-size: 20px;
+.decription-func-container {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ max-width: 1363px;
+ font-weight: 400;
+ font-size: 20px;
 }
 
 .func-container {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
+ display: flex;
+ flex-direction: row;
+ gap: 10px;
 }
 
 .func-container-button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-  width: 100px;
-  height: 40px;
-  border: none;
-  background-color: rgba(235, 235, 235, 0.3);
-  border-radius: 20px;
-  cursor: pointer;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+ gap: 4px;
+ width: 80px;
+ height: 30px;
+ border: none;
+ background-color: rgba(235, 235, 235, 0.3);
+ border-radius: 20px;
+ cursor: pointer;
 }
 
 .func-container p {
-  font-weight: 400;
-  font-size: 16px;
-  font-family: "Mulish", sans-serif;
+ font-weight: 400;
+ font-size: 12px;
+ font-family: "Mulish", sans-serif;
 }
 
 .func-container button img {
-  width: 14px;
-  height: 13px;
+ width: 14px;
+ height: 13px;
 }
 
 .more-button img {
-  width: 28px;
-  height: 6px;
+ width: 28px;
+ height: 6px;
 }
 
 .dots_button {
-  background: none;
-  border: none;
-  margin-left: 30px;
-  cursor: pointer;
+ background: none;
+ border: none;
+ margin-left: 30px;
+ cursor: pointer;
+}
+
+@media (max-width: 1440px) {
+ .decription-func-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  max-width: 1363px;
+  font-weight: 400;
+  font-size: 20px;
+ }
+.description-name {
+  font-size: 25px;
+ }
+
+ .description-views{
+    font-size: 16px;
+ }
+}
+
+@media (max-width: 1100px) {
+ .decription-func-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  max-width: 1363px;
+  font-weight: 400;
+  font-size: 20px;
+ }
+.description-name {
+  font-size: 20px;
+ }
+
+ .description-views{
+    font-size: 12px;
+ }
+}
+
+@media (max-width: 480px) {
+ .video__player-description {
+  display: none;
+ }
+
+ .description-name {
+  font-size: 20px;
+ }
+
+ .description-views {
+  font-size: 12px;
+ }
+
+ .func-container {
+  display: none;
+ }
 }

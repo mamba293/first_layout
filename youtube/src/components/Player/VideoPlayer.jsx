@@ -18,9 +18,9 @@ export default function VideoPlayer() {
       <ControlsDesktop/>
     </div>
 
-    {/* <VideoDescription />
+    <VideoDescription />
 
-    <VideoDescriptionMobile /> */}
+    {/* <VideoDescriptionMobile /> */}
    </div>
   </>
  );
