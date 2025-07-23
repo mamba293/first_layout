@@ -10,12 +10,21 @@
 }
 
 .player-container {
-  position: relative; 
-  max-width: 1363px;
-  width: 100%;
+ position: relative;
+ max-width: 1363px;
+ width: 100%;
 }
 
-.video{
-  max-width: 100%;
-  border-radius: 14px;
+.video {
+ max-width: 100%;
+ border-radius: 14px;
+}
+
+@media (max-width: 480px) {
+ .video {
+  border-radius: 0;
+ }
+ .video__player-container {
+  border-bottom: none;
+ }
 }

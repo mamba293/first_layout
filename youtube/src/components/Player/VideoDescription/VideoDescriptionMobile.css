@@ -5,6 +5,7 @@
 @media (max-width: 480px) {
   .video__player-description-mobile {
     display: block;
+    padding-left: 16px; 
   }
 
   .header_description-mobile {

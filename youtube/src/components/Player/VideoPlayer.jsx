@@ -3,6 +3,7 @@ import ControlsDesktop from "./Controls/ControlsDesktop";
 import ProgressBar from "./Controls/ProgressBar";
 import VideoDescription from "./VideoDescription/VideoDescription";
 import VideoDescriptionMobile from "./VideoDescription/VideoDescriptionMobile";
+import ControlsMobile from "./Controls/ControlsMobile";
 
 export default function VideoPlayer() {
  return (
@@ -16,11 +17,12 @@ export default function VideoPlayer() {
       </video>
       <ProgressBar/>
       <ControlsDesktop/>
+      <ControlsMobile/>
     </div>
 
     <VideoDescription />
 
-    {/* <VideoDescriptionMobile /> */}
+    <VideoDescriptionMobile />
    </div>
   </>
  );

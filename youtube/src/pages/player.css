@@ -15,13 +15,17 @@
 
 @media (max-width: 480px) {
  .main_content {
+  max-width: 480px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 0;
-  margin: 0 16px;
+  margin: 0;
   gap: 0;
  }
  .content_area {
+  width: 100%;
   gap: 0;
+  margin: 0;
  }
 }

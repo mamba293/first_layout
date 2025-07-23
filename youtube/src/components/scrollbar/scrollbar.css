@@ -314,6 +314,7 @@
  .scroll-container {
   width: 100%;
   height: auto;
+  padding-bottom: 0;
  }
 
  .autoplay-toggle {

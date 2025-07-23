@@ -36,3 +36,9 @@
  background-color: red;
  transition: width 0.3s ease;
 }
+
+@media(max-width: 480px){
+  .progress-wrapper{
+    display: none;
+  }
+}
