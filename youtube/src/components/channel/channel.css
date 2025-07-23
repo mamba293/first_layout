@@ -82,10 +82,9 @@
 }
 
 @media (max-width: 1200px) {
- .subscribe-btn {
-  padding: 10px 14px;
+ .count{
+    display: none;
  }
-
 }
 
 @media (max-width: 480px) {
