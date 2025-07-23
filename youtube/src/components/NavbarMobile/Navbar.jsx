@@ -1,7 +1,3 @@
-import homeIcon from "/first_layout/images/sidebar/Combined-Shape.svg";
-import trendingIcon from "/first_layout/images/sidebar/ui-01.svg";
-import subsIcon from "/first_layout/images/sidebar/ui-45.svg";
-import libraryIcon from "/first_layout/images/sidebar/documents-11.svg";
 import "./Navbar.css"
 
 const MobileNavbar = () => {
@@ -9,19 +5,19 @@ const MobileNavbar = () => {
   <nav className="mobile-navbar">
    <ul className="mobile-navbar__list">
     <li className="mobile-navbar__item">
-     <img src={homeIcon} alt="Home" />
+     <img src="/first_layout/images/sidebar/Combined-Shape.svg" alt="Home" />
      <p>Home</p>
     </li>
     <li className="mobile-navbar__item">
-     <img src={trendingIcon} alt="Trending" />
+     <img src="/first_layout/images/sidebar/ui-01.svg" alt="Trending" />
      <p>Trending</p>
     </li>
     <li className="mobile-navbar__item">
-     <img src={subsIcon} alt="Subscriptions" />
+     <img src="/first_layout/images/sidebar/ui-45.svg" alt="Subscriptions" />
      <p>Subscriptions</p>
     </li>
     <li className="mobile-navbar__item">
-     <img src={libraryIcon} alt="Library" />
+     <img src="/first_layout/images/sidebar/documents-11.svg" alt="Library" />
      <p>Library</p>
     </li>
    </ul>
