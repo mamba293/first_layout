@@ -6,14 +6,28 @@
  background-color: #fff;
  padding-bottom: 15px;
  border-bottom: 1px solid rgba(216, 216, 216, 0.5);
- max-width: 1363px;
  margin-bottom: 38px;
 }
 
 .player-container {
- position: relative;
- max-width: 1363px;
- border-radius: 14px;
- overflow: hidden;
- background-color: black;
+  position: relative; 
+  max-width: 1363px;
+  width: 100%;
 }
+
+.video{
+  max-width: 100%;
+  border-radius: 14px;
+}
+
+/* @media (max-width: 1024px) {
+  .video {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .video {
+    max-width: 750px;
+  }
+} */

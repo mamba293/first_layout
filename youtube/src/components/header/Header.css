@@ -42,9 +42,18 @@
   z-index: 100;
   padding: 12px 20px 0 16px;
   background-color: #fff;
-  box-sizing: border-box;
   width: 100%;
-  margin-bottom: 23px;
+ }
+
+ .header_navbar_container {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 12px 16px 23px 16px;
+  background-color: #fff;
+  width: 100%;
  }
 
  .navbar__menu-button {
@@ -57,7 +66,6 @@
  .navbar__icons-list {
   display: none;
  }
-
 
  .mobile_more button {
   cursor: pointer;

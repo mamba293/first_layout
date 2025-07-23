@@ -1,8 +1,8 @@
-import Header from "../components/header/Heder";
+import Header from "../components/Header/Heder";
 import VideoPlayer from "../components/Player/VideoPlayer";
 import Channel from "../components/channel/channel";
-import "./player.css";
-import Scrollbar from "../components/scrollbar/scrollbar";
+import "./Player.css";
+import Scrollbar from "../components/Scrollbar/Scrollbar";
 
 export default function VideoPlayerPage() {
  return (
@@ -11,9 +11,9 @@ export default function VideoPlayerPage() {
   <main className="main_content">
     <div className="content_area">
       <VideoPlayer />
-      {/* <Channel /> */}
+      <Channel />
     </div>
-    {/* <Scrollbar /> */}
+    <Scrollbar />
   </main>
   
 </>
