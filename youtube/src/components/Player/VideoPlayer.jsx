@@ -1,4 +1,4 @@
-import MobileNavbar from "../navbar-mobile/Navbar";
+
 import "./VideoPlayer.css";
 
 export default function VideoPlayer() {
@@ -147,7 +147,7 @@ export default function VideoPlayer() {
      </div>
     </div>
    </div>
-   <MobileNavbar/>
+   
   </>
  );
 }

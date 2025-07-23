@@ -1,0 +1,17 @@
+.left_navbar {
+ display: flex;
+ gap: 28px;
+ align-items: center;
+}
+
+.navbar__menu-button {
+ border: none;
+ background: none;
+ cursor: pointer;
+}
+
+    .navbar__logo {
+ width: 116px;
+ height: 25px;
+}
+
