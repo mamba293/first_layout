@@ -11,7 +11,7 @@ export default function VideoPlayer() {
    <div className="video__player-container">
     <div className="player-container">
       <video
-       src="/videos/video.mp4"
+       src="/first_layout/videos/video.mp4"
        className="video"
       >
       </video>
