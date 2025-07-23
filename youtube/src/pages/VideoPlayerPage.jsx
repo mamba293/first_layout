@@ -1,9 +1,9 @@
-import Header from "../components/Header/Heder";
-import VideoPlayer from "../components/Player/VideoPlayer";
-import Channel from "../components/channel/channel";
+import Header from "/src/components/Header/Heder";
+import VideoPlayer from "/src/components/Player/VideoPlayer";
+import Channel from "/src/components/channel/channel";
 import "./Player.css";
-import Scrollbar from "../components/Scrollbar/Scrollbar";
-import MobileNavbar from "../components/NavbarMobile/Navbar";
+import Scrollbar from "/src/components/Scrollbar/Scrollbar";
+import MobileNavbar from "/src/components/NavbarMobile/Navbar";
 
 export default function VideoPlayerPage() {
  return (
